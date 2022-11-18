@@ -1,0 +1,15 @@
+<div style="margin: 20px auto; width: 390px;">
+
+    <div class="item-list">
+
+        <p>item-list works!</p>
+
+        <p *ngFor="let data of arrayItem"> {{ data }} </p>
+
+        <p *ngIf="shouldShow"> Should show this. </p>
+
+        <Button (click)="sendDataToParent()" > Send data to parent </Button>
+
+    </div>
+
+</div>

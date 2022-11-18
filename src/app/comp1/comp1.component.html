@@ -1,0 +1,20 @@
+<div style="margin: 20px auto; width: 390px;">
+
+    <div class="component-one">
+        <p> {{ title }}</p>
+    
+        <Button (click)="btnClick('test')" >Click me!</Button>
+
+        <Button (click)="callGetApi()">Call Get Api</Button>
+    
+    </div>
+
+    <div class="component-one" *ngIf="userList.length > 0">
+
+        <p *ngFor="let user of userList"> <img src="{{ user.avatar }}" /> {{ user.first_name }} {{ user.last_name }} </p>
+    </div>
+
+</div>
+
+
+
